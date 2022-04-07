@@ -32,6 +32,7 @@
   --blue-btn-hover: #016cf9;
   --white-btn: #f9f9f9;
   --bg-color: #040714;
+  --bg-accordion: #13151d;
 }
 
 html {
@@ -43,6 +44,7 @@ body {
   font-family: "Avenir-Light", sans-serif;
   font-size: 16px;
   background-color: var(--bg-color);
+  overflow-x: hidden;
 }
 
 /* CONFIG GERAL PARA OS BOTÕES/LINKS */
@@ -162,7 +164,7 @@ main {
   display: block;
 }
 
-/* PRIMEIRA SESSÃO */
+/* PRIMEIRA SEÇÃO */
 .signature {
   width: 100%;
   height: 100vh;
@@ -342,4 +344,242 @@ main {
 .signature__types span {
   font-size: 0.6rem;
   color: var(--silver);
+}
+
+/* TERCEIRA SEÇÃO */
+.watch__anyway {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5%;
+  width: 100%;
+  margin: 70px 0;
+}
+
+.watch__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  padding: 0 30px 0 0;
+}
+
+.watch__anyway h1 {
+  font-size: 2rem;
+  line-height: 5rem;
+}
+
+.watch__anyway p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.watch__image__device {
+  width: 50%;
+}
+
+.watch__image__device img {
+  width: 100%;
+}
+
+/* QUARTA SEÇÃO */
+.exclusive__disney {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 5%;
+  margin: 70px 0;
+}
+
+.exclusive__disney h1,
+h3 {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid__exclusives {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.image__exclusive {
+  padding: 10px;
+}
+
+.image__exclusive img {
+  width: 100%;
+}
+
+.download__films__series {
+  width: 100%;
+  height: auto;
+  padding: 3% 5%;
+  position: relative;
+}
+
+.download__container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+}
+
+.banner__image {
+  width: 100%;
+  height: auto;
+}
+
+.banner__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__description {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: var(--white);
+}
+
+.banner__description h1 {
+  font-size: 1.5rem;
+}
+
+.banner__description h3 {
+  font-size: 1rem;
+  text-align: start;
+  margin-top: 30px;
+  color: var(--silver);
+}
+
+/* QUINTA SEÇÃO */
+.devices__type {
+  width: 100%;
+  padding: 3% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+}
+
+.devices__type h1 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.devices {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.device__type {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.device__type img {
+  width: 100%;
+}
+
+.device__type h1 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.device__type span {
+  font-size: 1rem;
+  color: var(--silver);
+  line-height: 1.5rem;
+}
+
+.device__type span:nth-child(3) {
+  margin-top: -30px;
+}
+
+/* SEXTA SEÇÃO */
+.accordions__questions {
+  width: 100%;
+  padding: 3% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+}
+
+.accordions__questions h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.accordions {
+  width: 100%;
+}
+
+.accordion__tabs {
+  overflow: hidden;
+}
+
+.accordion__tab {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.accordion__tab input {
+  display: none;
+}
+
+.tab__label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  background-color: var(--bg-accordion);
+  cursor: pointer;
+}
+
+.tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+
+.tab__description {
+  max-height: 0;
+  padding: 0 2rem;
+  color: var(--silver);
+  transition: all 0.35s;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab__description span {
+  font-size: 1rem;
+  line-height: 3rem;
+}
+
+.accordion__tab input:checked + .tab__label::after {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.accordion__tab input:checked ~ .tab__description {
+  max-height: 100vh;
+  padding: 0 2rem;
+  background-color: var(--bg-accordion);
 }
