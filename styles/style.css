@@ -583,3 +583,59 @@ h3 {
   padding: 0 2rem;
   background-color: var(--bg-accordion);
 }
+
+/* FOOTER */
+.footer__content {
+  width: 100%;
+  padding: 3% 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 0;
+  width: 100%;
+}
+
+.footer__logo img {
+  width: 100px;
+}
+
+.footer__links {
+  width: 100%;
+  padding: 2% 10%;
+}
+
+.footer__link {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__link li {
+  margin: 0 15px;
+}
+
+.footer__link li a {
+  color: var(--silver);
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.footer__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__text span {
+  color: var(--silver);
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 10px 0;
+}
