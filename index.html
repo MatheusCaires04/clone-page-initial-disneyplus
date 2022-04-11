@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
     <script
       src="https://kit.fontawesome.com/ce56093c1c.js"
       crossorigin="anonymous"
@@ -29,34 +31,32 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="signature">
-        <div class="signature__items">
-          <h1 class="title__signature">
-            As melhores histórias em um só lugar.
-          </h1>
-          <img
-            src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original"
-            alt="Imagem da logo da disney"
-            class="image__disney__signature"
-          />
-          <a href="#" class="btn__signature__ofert">ASSINE A OFERTA COMBO+</a>
-          <div class="links__type__signature">
-            <a href="#" class="monthly __subscription"
-              >Assinar somente o Disney+ mensal</a
-            >
-            |
-            <a href="#" class="annual__subscription"
-              >Assinar somente o Disney+ anual</a
-            >
-          </div>
-          <a href="#signature__types" class="btn__icon__down">
-            <i class="fas fa-angle-down"></i>
-          </a>
+    <section class="signature">
+      <div class="signature__items">
+        <h2 class="title__signature">As melhores histórias em um só lugar.</h2>
+        <img
+          src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original"
+          alt="Imagem da logo da disney"
+          class="image__disney__signature"
+        />
+        <a href="#" class="btn__signature__ofert">ASSINE A OFERTA COMBO+</a>
+        <div class="links__type__signature">
+          <a href="#" class="monthly __subscription"
+            >Assinar somente o Disney+ mensal</a
+          >
+          |
+          <a href="#" class="annual__subscription"
+            >Assinar somente o Disney+ anual</a
+          >
         </div>
-      </section>
+        <a href="#signature__types" class="btn__icon__down">
+          <i class="fas fa-angle-down"></i>
+        </a>
+      </div>
+    </section>
+    <main>
       <section class="signature__types" id="signature__types">
-        <h1>Escolha seu plano</h1>
+        <h1 class="titles">Escolha seu plano</h1>
         <div class="types">
           <div
             class="type"
@@ -108,7 +108,7 @@
       </section>
       <section class="watch__anyway">
         <div class="watch__text">
-          <h1>Assista do seu jeito</h1>
+          <h1 class="titles">Assista do seu jeito</h1>
           <p>
             Aproveite a tela grande da TV ou assista no tablet, laptop, celular
             e outros aparelhos. Nossa seleção de títulos em 4K não para de
@@ -121,7 +121,7 @@
         </div>
       </section>
       <section class="exclusive__disney">
-        <h1>Originais Disney+ exclusivos</h1>
+        <h1 class="titles">Originais Disney+ exclusivos</h1>
         <h3>
           Só no Disney+ você vê os melhores filmes, séries, curtas e outros
           conteúdos inéditos.
@@ -162,7 +162,7 @@
             <img src="images/banner-rei-leao.png" alt="" />
           </div>
           <div class="banner__description">
-            <h1>Baixe filmes e séries</h1>
+            <h2>Baixe filmes e séries</h2>
             <h3>
               Baixe e assista quando e onde quiser. Assim, seus favoritos estão
               sempre com você, até mesmo sem internet.
@@ -171,18 +171,18 @@
         </div>
       </section>
       <section class="devices__type">
-        <h1>Disponíveis nos seus dispositivos favoritos</h1>
+        <h1 class="titles">Disponíveis nos seus dispositivos favoritos</h1>
         <div class="devices">
           <div class="device__type">
             <img src="images/computer-device.png" alt="" />
-            <h1>Computador</h1>
+            <h2>Computador</h2>
             <span>Chrome OS</span>
             <span>MacOS</span>
             <span>PC Windows</span>
           </div>
           <div class="device__type">
             <img src="images/tv-device.png" alt="" />
-            <h1>TV</h1>
+            <h2>TV</h2>
             <span>Amazon Fire TV</span>
             <span>Android TV</span>
             <span>Apple TV</span>
@@ -193,7 +193,7 @@
           </div>
           <div class="device__type">
             <img src="images/game-device.png" alt="" />
-            <h1>Videogames</h1>
+            <h2>Videogames</h2>
             <span>PS4</span>
             <span>PS5</span>
             <span>Xbox One</span>
@@ -202,7 +202,7 @@
           </div>
           <div class="device__type">
             <img src="images/tablet-cell-device.png" alt="" />
-            <h1>Celulares e tablets</h1>
+            <h2>Celulares e tablets</h2>
             <span>Tablets Amazon Fire</span>
             <span>Celulares e Tablets Android</span>
             <span>iPhone e iPad</span>
@@ -210,7 +210,7 @@
         </div>
       </section>
       <section class="accordions__questions">
-        <h1>Perguntas Frequentes</h1>
+        <h1 class="titles">Perguntas Frequentes</h1>
         <div class="accordions">
           <div class="accordion__tabs">
             <div class="accordion__tab">
@@ -293,40 +293,40 @@
           </div>
         </div>
       </section>
-      <footer>
-        <div class="footer__content">
-          <div class="footer__logo">
-            <img src="images/logodisney.svg" alt="Logo da Disney+" />
-          </div>
-          <div class="footer__links">
-            <ul class="footer__link">
-              <li><a href="#">Português</a></li>
-              <li><a href="#">Termos e Condições de Uso</a></li>
-              <li><a href="#">Política de privacidade</a></li>
-              <li><a href="#">Proteção de Dados no Brasil</a></li>
-              <li><a href="#">Anúncios personalizados</a></li>
-              <li><a href="#">Dispositivos compatíveis</a></li>
-              <li><a href="#">Ajuda</a></li>
-              <li><a href="#">Sobre o Disney+</a></li>
-            </ul>
-          </div>
-          <div class="footer__text">
-            <span
-              >® 2022 Disney, Disney+ e The Walt Disney Company. Todos os
-              direitos reservados. Serviço de assinatura paga. Conteúdo sujeito
-              a disponibilidade.</span
-            >
-            <span
-              >Disney+ é um serviço pago, baseado em assinatura e sujeito a
-              termos e condições. O serviço Disney+ é comercializado por The
-              Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das
-              Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP
-              04578-903, Brasil e CNPJ/M 73.042.962/0004-20</span
-            >
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="images/logodisney.svg" alt="Logo da Disney+" />
+        </div>
+        <div class="footer__links">
+          <ul class="footer__link">
+            <li><a href="#">Português</a></li>
+            <li><a href="#">Termos e Condições de Uso</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Proteção de Dados no Brasil</a></li>
+            <li><a href="#">Anúncios personalizados</a></li>
+            <li><a href="#">Dispositivos compatíveis</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Sobre o Disney+</a></li>
+          </ul>
+        </div>
+        <div class="footer__text">
+          <span
+            >® 2022 Disney, Disney+ e The Walt Disney Company. Todos os direitos
+            reservados. Serviço de assinatura paga. Conteúdo sujeito a
+            disponibilidade.</span
+          >
+          <span
+            >Disney+ é um serviço pago, baseado em assinatura e sujeito a termos
+            e condições. O serviço Disney+ é comercializado por The Walt Disney
+            Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas,
+            12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903,
+            Brasil e CNPJ/M 73.042.962/0004-20</span
+          >
+        </div>
+      </div>
+    </footer>
 
     <script src="./scripts/scrollMenu.js"></script>
   </body>

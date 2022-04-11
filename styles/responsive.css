@@ -1,0 +1,121 @@
+@media (max-width: 1024px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .signature {
+    background-image: url("https://cnbl-cdn.bamgrid.com/assets/b0f57293bf9c5bc7d6f1b6967f4d6442ca15b1b4b94f5382e6878e866b2dfa37/original");
+    justify-content: center;
+    padding: 74% 0 40% 0;
+  }
+
+  .image__disney__signature {
+    width: 60%;
+  }
+
+  .btn__icon__down {
+    position: relative;
+  }
+
+  .links__type__signature {
+    width: 100%;
+  }
+
+  .signature__types {
+    padding-top: 80px;
+  }
+
+  .download__films__series {
+    padding: 3% 1%;
+  }
+
+  .banner__description {
+    padding-right: 40px;
+  }
+
+  .devices__type h1 {
+    margin: 50px 0;
+  }
+
+  .accordions__questions h1 {
+    margin: 80px 0 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .types {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .type {
+    max-width: 60%;
+  }
+
+  .watch__anyway {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .watch__image__device {
+    order: -1;
+    width: 90%;
+  }
+
+  .watch__text {
+    width: 90%;
+    padding: 40px 0 40px 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .grid__exclusives {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .download__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner__description {
+    width: 85%;
+    position: relative;
+    left: 0;
+    top: 0;
+    align-items: center;
+  }
+
+  .banner__description h3 {
+    margin-top: 30px;
+    color: var(--silver);
+    text-align: center;
+    line-height: 1.7rem;
+  }
+
+  .devices {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tab__label {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .signature__items {
+    width: 90%;
+  }
+
+  .type {
+    max-width: 90%;
+  }
+}

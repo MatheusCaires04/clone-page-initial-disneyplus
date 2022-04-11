@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* FONTES EXTERNAS */
+@font-face {
+  font-family: "Avenir-Light";
+  src: url("fonts/Metropolis-Light.otf");
+}
+
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url("fonts/Metropolis-Medium.otf");
+}
+
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url("fonts/Metropolis-Bold.otf");
+}
+
+/* VARIÁVEIS GLOBAIS */
+:root {
+  --silver: silver;
+  --black-transparence: rgba(0, 0, 0, 0.8);
+  --white: #fff;
+  --black: #000;
+  --blue-btn: #6421ff;
+  --blue-btn-hover: #016cf9;
+  --white-btn: #f9f9f9;
+  --bg-color: #040714;
+  --bg-accordion: #13151d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: "Avenir-Light", sans-serif;
+  font-size: 16px;
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* CONFIG GERAL */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--white);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3,
+h4 {
+  font-size: 1rem;
+}
+
+span,
+p {
+  color: var(--silver);
+}
+
+section {
+  width: 100%;
+  display: flex;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  padding: 0 2%;
+}
+
+main {
+  display: block;
+  padding: 0 5%;
+}
+
+.btn {
+  padding: 13px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 1.1rem;
+}

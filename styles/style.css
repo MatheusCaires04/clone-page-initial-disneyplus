@@ -1,69 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
-
-/* FONTES EXTERNAS */
-@font-face {
-  font-family: "Avenir-Light";
-  src: url("fonts/Metropolis-Light.otf");
-}
-
-@font-face {
-  font-family: "Avenir-Medium";
-  src: url("fonts/Metropolis-Medium.otf");
-}
-
-@font-face {
-  font-family: "Avenir-Bold";
-  src: url("fonts/Metropolis-Bold.otf");
-}
-
-/* VARIÁVEIS GLOBAIS */
-:root {
-  --silver: silver;
-  --black-transparence: rgba(0, 0, 0, 0.8);
-  --white: #fff;
-  --black: #000;
-  --blue-btn: #6421ff;
-  --blue-btn-hover: #016cf9;
-  --white-btn: #f9f9f9;
-  --bg-color: #040714;
-  --bg-accordion: #13151d;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  font-family: "Avenir-Light", sans-serif;
-  font-size: 16px;
-  background-color: var(--bg-color);
-  overflow-x: hidden;
-}
-
-/* CONFIG GERAL PARA OS BOTÕES/LINKS */
-.btn {
-  padding: 13px 15px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  font-size: 1.1rem;
-}
-
 /* HEADER */
-header {
-  width: 100%;
-  position: fixed;
-}
-
 .header__content__top {
   max-width: 1124px;
   height: 60px;
@@ -159,21 +94,14 @@ header {
   background-color: var(--blue-btn-hover);
 }
 
-/* PRINCIPAL */
-main {
-  display: block;
-}
-
 /* PRIMEIRA SEÇÃO */
 .signature {
-  width: 100%;
   height: 100vh;
   background-image: url("../images/original-resolution.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 5%;
-  display: flex;
   align-items: center;
+  padding: 0 5%;
 }
 
 .signature__items {
@@ -263,16 +191,11 @@ main {
 
 /* SEGUNDA SEÇÃO */
 .signature__types {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 0 5%;
 }
 
 .signature__types h1 {
-  font-size: 2.5rem;
-  color: var(--white);
   margin-bottom: 40px;
 }
 
@@ -301,20 +224,11 @@ main {
   text-align: center;
 }
 
-.type__description h3 {
-  font-size: 1rem;
-  color: var(--silver);
-}
-
 .type__description h2 {
-  font-size: 1.2rem;
-  color: var(--white);
   margin: 35px 0 15px 0;
 }
 
 .type__description h4 {
-  font-size: 1rem;
-  color: var(--silver);
   line-height: 2rem;
 }
 
@@ -348,10 +262,7 @@ main {
 
 /* TERCEIRA SEÇÃO */
 .watch__anyway {
-  display: flex;
   flex-direction: row;
-  padding: 0 5%;
-  width: 100%;
   margin: 70px 0;
 }
 
@@ -365,7 +276,6 @@ main {
 }
 
 .watch__anyway h1 {
-  font-size: 2rem;
   line-height: 5rem;
 }
 
@@ -384,16 +294,12 @@ main {
 
 /* QUARTA SEÇÃO */
 .exclusive__disney {
-  display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 0 5%;
   margin: 70px 0;
 }
 
 .exclusive__disney h1,
 h3 {
-  color: var(--white);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -413,6 +319,7 @@ h3 {
   width: 100%;
 }
 
+/* QUINTA SEÇÃO */
 .download__films__series {
   width: 100%;
   height: auto;
@@ -446,29 +353,20 @@ h3 {
   color: var(--white);
 }
 
-.banner__description h1 {
-  font-size: 1.5rem;
-}
-
 .banner__description h3 {
-  font-size: 1rem;
-  text-align: start;
   margin-top: 30px;
   color: var(--silver);
+  text-align: justify;
 }
 
-/* QUINTA SEÇÃO */
+/* SEXTA SEÇÃO */
 .devices__type {
-  width: 100%;
-  padding: 3% 5%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--white);
 }
 
-.devices__type h1 {
-  font-size: 2.5rem;
+.devices__type h2 {
   margin-bottom: 60px;
 }
 
@@ -492,7 +390,6 @@ h3 {
 }
 
 .device__type h1 {
-  font-size: 1.5rem;
   margin-top: 20px;
 }
 
@@ -506,18 +403,14 @@ h3 {
   margin-top: -30px;
 }
 
-/* SEXTA SEÇÃO */
+/* SÉTIMA SEÇÃO */
 .accordions__questions {
-  width: 100%;
-  padding: 3% 5%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--white);
 }
 
 .accordions__questions h1 {
-  font-size: 2rem;
   margin-bottom: 30px;
 }
 
@@ -587,8 +480,8 @@ h3 {
 /* FOOTER */
 .footer__content {
   width: 100%;
-  padding: 3% 2%;
   display: flex;
+  padding: 3% 1%;
   flex-direction: column;
 }
 
@@ -626,6 +519,10 @@ h3 {
   line-height: 1.5rem;
 }
 
+.footer__link li a:hover {
+  color: var(--white);
+}
+
 .footer__text {
   width: 100%;
   display: flex;
@@ -638,4 +535,5 @@ h3 {
   font-size: 0.7rem;
   text-align: center;
   margin: 10px 0;
+  line-height: 1.3rem;
 }
